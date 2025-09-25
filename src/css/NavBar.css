@@ -1,0 +1,10 @@
+.navbar {
+    background-color: #242424;
+    width: 100%;
+}
+
+.navbar > ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
