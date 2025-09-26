@@ -1,16 +1,22 @@
 button {
     -webkit-tap-highlight-color: transparent;
 }
+
+.current-location {
+    background-color: #343434;
+}
+
 @media screen {
     .navbar {
+        position: fixed;
         display: flex;
         flex-direction: row;
-        background-color: #242424;
+        background-color: #232323;
         width: 100%;
     }
     
     .navbar > h1 {
-        color: #3399df;
+        color: #3399ff;
         margin-inline: 1vw;
     }
     
@@ -23,8 +29,9 @@ button {
         align-items: center;
     }
     
-    .navbar > ul > li {
+    .navbar > ul > a {
         color: white;
+        text-decoration: none;
         font-size: 1.1rem;
         padding: 10px 18px;
         border-radius: 6px;
@@ -32,7 +39,7 @@ button {
         transition: background 0.2s, color 0.2s;
     }
     
-    .navbar > ul > li:hover {
+    .navbar > ul > a:hover {
         background-color: #287bb5;
         color: #e0e0e0;
     }   
