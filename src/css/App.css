@@ -1,3 +1,7 @@
+:root {
+  background-color: #131313;
+}
+
 /* Large Size devices (Computers) */
 @media screen {
   :root {
