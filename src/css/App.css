@@ -1,16 +1,60 @@
+/* Large Size devices (Computers) */
+@media screen {
+  :root {
+    --font-size-base: 16px;
+    --spacing: 1rem;
+    --padding: 1rem;
+    --container-width: 80%;
+    --card-width-s: 25%;
+    --card-width-m: 50%;
+    --card-width-l: 75%;
+    --my-color-theme: #3399ff;
+  }
+}
+
+/*  Medium Size devices (Tablets) */
+@media(min-width: 769px) and (max-width: 1024px) {
+  :root {
+    --font-size-base: 15px;
+    --spacing: 0.75rem;
+    --padding: 0.75rem;
+    --container-width: 90%;
+    --card-width-s: 35%;
+    --card-width-m: 75%;
+    --card-width-l: 85%;
+    --my-color-theme: #3399ff;
+    --img-width: 100%;
+    --img-height: 100%;
+  }
+}
+
+/*  Small device media (Phones) */
+@media (max-width: 768px) {
+  :root {
+    --font-size-base: 14px;
+    --spacing: 0.5rem;
+    --padding: 0.5rem;
+    --container-width: 100%;
+    --card-width-s: 65%;
+    --card-width-m: 75%;
+    --card-width-l: 85%;
+    --my-color-theme: #3399ff;
+  }
+}
 
 .App-header {
   background-color: #131313;
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: var(--font-size-base);
   color: white;
 }
 
 .container {
-  width: 85%;
+  width: var(--container-width);
   height: min-content;
 }

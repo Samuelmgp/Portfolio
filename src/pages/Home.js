@@ -6,7 +6,7 @@ function Home () {
     }
 
         return (
-            <div className="App-header ">
+            <div className="App-header">
                 <div className="container">
                     <h2>About me</h2>
                     <div className="about-me">
