@@ -16,7 +16,7 @@ button {
     }
     
     .navbar > h1 {
-        color: var(--my-color-theme);
+        color: var(--color-primary);
         margin-inline: 1vw;
     }
     

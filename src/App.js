@@ -8,6 +8,7 @@ import NavBar from './components/Navigation';
 
 // CSS
 import './css/App.css'
+import './Canvas'
 
 function App() {
   return (
