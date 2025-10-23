@@ -1,4 +1,5 @@
 .contact-card {
+    z-index: 1;
     display: flex;
     flex-direction: row;
     justify-items: center;
@@ -25,12 +26,43 @@
   }
   
   .contact-info-item > h1 {
-    margin: 0;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .contact-tagline {
+    margin: 0 0 1rem 0;
+    color: var(--color-primary);
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  .contact-description {
+    margin: 0 0 1.5rem 0;
+    line-height: 1.6;
+    color: #d0d0d0;
+    max-width: 500px;
   }
 
   .contact-info-item > p > a {
     text-decoration-color: var(--color-primary);
     color: var(--color-primary);
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: space-evenly;
+    content: icon;
+    margin-top: 0.5rem;
+  }
+
+  .contact-links > a {
+    color: var(--color-primary);
+    font-size: 5rem;
+    transition: transform 0.2s ease;
+  }
+
+  .contact-links > a:hover {
+    transform: scale(1.15);
   }
 
   /* Mobile responsive styles */

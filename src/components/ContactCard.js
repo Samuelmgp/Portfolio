@@ -1,4 +1,6 @@
-import '../css/Contact.css'
+import '../css/Contact.css';
+import { IoLogoLinkedin, IoLogoGithub } from "react-icons/io";
+import { MdOutlineAlternateEmail } from "react-icons/md";
 
 function ContactCard () {
     return (
@@ -9,10 +11,21 @@ function ContactCard () {
             <div className="contact-info">
                 <div className="contact-info-item">
                     <h1>Let's Connect!</h1>
-                    <p className="email">Email: <a href="mailto:samuelmgp@icloud.com">samuelmgp@icloud.com</a></p>
-                    <p className="phone">Phone: <a href="tel:+19029303239">+1 (902) 930-3239</a></p>
-                    <p className="linkedin">LinkedIn: <a href="https://www.linkedin.com/in/samuel-garcia-65589923b/">https://www.linkedin.com/in/samuel-garcia-65589923b/</a></p>
-                    <p className="github">GitHub: <a href="https://github.com/Samuelmgp">https://github.com/Samuelmgp</a></p>
+                    <p className="contact-tagline">Software Developer | Problem Solver </p>
+                    <p className="contact-description">
+                        Click on any of the icons bellow to connect with me!
+                    </p>
+                    <div className='contact-links'>
+                        <a href="mailto:samuelmgp@icloud.com">
+                            <MdOutlineAlternateEmail size={48} />
+                        </a>
+                        <a href="https://www.linkedin.com/in/samuel-garcia-65589923b/">
+                            <IoLogoLinkedin size={48} />
+                        </a>
+                        <a href="https://github.com/Samuelmgp">
+                            <IoLogoGithub size={48} />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
