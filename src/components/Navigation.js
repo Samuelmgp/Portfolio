@@ -19,7 +19,7 @@ function NavBar () {
                 <Link to="/" className={location.pathname === "/" ? "current-location" : ""}>About Me</Link>
                 <Link to="/experience" className={location.pathname === "/experience" ? "current-location" : ""}>Experience</Link>
                 <Link to="/projects" className={location.pathname === "/projects" ? "current-location" : ""}>Projects</Link>
-                <Link to="/contact" className={location.pathname === "/contact" ? "current-location" : ""}>Contact</Link>
+                <Link to="/contact" className={location.pathname === "/contact" ? "current-location" : ""}>Resume</Link>
             </ul>
             <button className="navbar-hamburger" onClick={handleMenuClick}>
                 <VscMenu className="menu"/>

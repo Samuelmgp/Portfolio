@@ -58,10 +58,26 @@
 .container {
   width: var(--container-width);
   height: min-content;
-  background-color: var(--color-background-lighter);
+  background-color: var(--color-background);
   padding: 1.2rem;
   border-radius: 1rem;
   box-shadow: 2px 0 10px 0 var(--color-primary);
+}
+
+.body {
+  padding-inline: 1rem;
+}
+
+.about-me-section {
+   display: flex;
+   align-items: center;
+   justify-items: center;
+}
+
+.my-photo {
+  width: 200px;
+  border-radius: 1rem;
+  border: var(--color-secondary);
 }
 
 canvas {

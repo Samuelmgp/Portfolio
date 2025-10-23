@@ -1,6 +1,6 @@
 import ContactCard from '../components/ContactCard';
 
-function Contact () {
+function Resume () {
     return (
         <div className="App-header">
             <ContactCard />
@@ -8,4 +8,4 @@ function Contact () {
     )
 }
 
-export default Contact
+export default Resume
