@@ -1,7 +1,3 @@
-:root {
-  background-color: #131313;
-}
-
 /* Large Size devices (Computers) */
 @media screen {
   :root {
@@ -12,7 +8,10 @@
     --card-width-s: 25%;
     --card-width-m: 50%;
     --card-width-l: 75%;
-    --my-color-theme: #3399ff;
+    --color-primary: #3399ff;
+    --color-secondary: #eeff33;
+    --color-background: #131313;
+    --color-background-lighter: #333333;
   }
 }
 
@@ -22,7 +21,6 @@
     --font-size-base: 15px;
     --spacing: 0.75rem;
     --padding: 0.75rem;
-    --container-width: 90%;
     --card-width-s: 35%;
     --card-width-m: 75%;
     --card-width-l: 85%;
@@ -38,7 +36,6 @@
     --font-size-base: 14px;
     --spacing: 0.5rem;
     --padding: 0.5rem;
-    --container-width: 100%;
     --card-width-s: 65%;
     --card-width-m: 75%;
     --card-width-l: 85%;
@@ -47,7 +44,7 @@
 }
 
 .App-header {
-  background-color: #131313;
+  background-color: transparent;
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
@@ -61,4 +58,43 @@
 .container {
   width: var(--container-width);
   height: min-content;
+  background-color: var(--color-background);
+  padding: 1.2rem;
+  border-radius: 1rem;
+  box-shadow: 2px 0 10px 0 var(--color-primary);
+}
+
+.body {
+  padding-inline: 1rem;
+}
+
+.about-me-section {
+   display: flex;
+   align-items: center;
+   justify-items: center;
+}
+
+.my-photo {
+  width: 200px;
+  border-radius: 1rem;
+  border: var(--color-secondary);
+}
+
+canvas {
+  background-color:var(--color-background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: auto;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.container * {
+  pointer-events: auto;
 }

@@ -9,7 +9,7 @@
     background-color: #232323;
     border-radius: 1rem;
     padding: var(--padding);
-    box-shadow: 0 0 10px 0 var(--my-color-theme);
+    box-shadow: 0 0 10px 0 var(--color-primary);
   }
 
   .contact-info-img img {
@@ -29,8 +29,8 @@
   }
 
   .contact-info-item > p > a {
-    text-decoration-color: var(--my-color-theme);
-    color: var(--my-color-theme);
+    text-decoration-color: var(--color-primary);
+    color: var(--color-primary);
   }
 
   /* Mobile responsive styles */
