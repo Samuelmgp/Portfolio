@@ -12,6 +12,7 @@
     --color-secondary: #eeff33;
     --color-background: #131313;
     --color-background-lighter: #333333;
+    --color-background-translucent: rgba(19,19,19,0.85);
   }
 }
 
