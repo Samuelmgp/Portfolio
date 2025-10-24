@@ -42,11 +42,6 @@
     max-width: 500px;
   }
 
-  .contact-info-item > p > a {
-    text-decoration-color: var(--color-primary);
-    color: var(--color-primary);
-  }
-
   .contact-links {
     display: flex;
     justify-content: space-evenly;
@@ -55,7 +50,7 @@
   }
 
   .contact-links > a {
-    color: var(--color-secondary);
+    color: var(--color-primary);
     font-size: 5rem;
     transition: transform 0.2s ease;
   }
@@ -74,7 +69,7 @@
 }
 
 .skill-badge {
-  background-color: var(--color-background);
+  background-color: var(--color-background-lighter);
   color: var(--color-secondary);
   padding: 0.4rem 0.8rem;
   border-radius: 0.5rem;
@@ -94,13 +89,24 @@
   /* Mobile responsive styles */
   @media (max-width: 768px) {
     .contact-card {
+        margin-top: 6rem;
+        margin-bottom: 1rem;
         width: var(--card-width-m);
         flex-direction: column;
         text-align: center;
     }
+
+    .skills-badges {
+        padding-inline: 10px;
+    }
     
+    .contact-description {
+        text-align: start;
+        padding-inline: 1rem;
+    }
+
     .contact-info-img img {
-      max-width: 150px;
-      margin: 0 auto;
+        max-width: max-content;
+        margin: 0 auto;
     }
   }
