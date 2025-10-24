@@ -47,6 +47,7 @@
 .App-header {
   background-color: transparent;
   min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height for mobile Safari */
   min-width: 100vw;
   display: flex;
   flex-direction: column;
@@ -86,6 +87,9 @@ canvas {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh; /* Dynamic viewport height for mobile Safari */
   z-index: 0;
   pointer-events: auto;
 }

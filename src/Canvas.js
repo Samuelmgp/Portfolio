@@ -13,8 +13,14 @@ function getColors(){
 
 var canvas = document.querySelector('canvas');
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+// Use CSS dimensions instead of window dimensions for better mobile Safari support
+function setCanvasSize() {
+    const rect = canvas.getBoundingClientRect();
+    canvas.width = rect.width;
+    canvas.height = rect.height;
+}
+
+setCanvasSize();
 
 var width_center = canvas.width/2;
 var height_center = canvas.height/2;
@@ -164,8 +170,7 @@ function preload(size) {
 }
 
 function refresh() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    setCanvasSize();
     width_center = canvas.width/2;
     height_center = canvas.height/2;
     shape_size = canvas.width * p_width;

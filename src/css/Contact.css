@@ -106,7 +106,7 @@
     }
 
     .contact-info-img img {
-        max-width: max-content;
-        margin: 0 auto;
+        max-width: min-content;
+        align-self: center;
     }
   }
