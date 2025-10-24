@@ -2,8 +2,10 @@
     z-index: 1;
     display: flex;
     flex-direction: row;
-    justify-items: center;
-    align-items: center;
+    justify-self: center;
+    align-self: center;
+    justify-content: space-around;
+    align-content: space-around;
     gap: var(--spacing);
     width: var(--card-width-l);
     height: min-content;
@@ -13,100 +15,94 @@
     box-shadow: 0 0 10px 0 var(--color-primary);
   }
 
-  .contact-info-img img {
-    width: 200px;
+  .contact-image {
+    width: 20%;
+    height: 40%;
     border-radius: 1rem;
-    border: var(--color-secondary);
   }
 
   .contact-info {
     display: flex;
+    width: 100%;
     flex-direction: column;
   }
-  
-  .contact-info-item > h1 {
-    margin: 0 0 0.5rem 0;
+
+  .contact-info h1 {
+    color: var(--font-color-body);
+    margin-bottom: 0.5rem;
   }
 
   .contact-tagline {
-    margin: 0 0 1rem 0;
+    margin-top: 0.5rem;
     color: var(--color-primary);
-    font-size: 0.95rem;
-    font-weight: 500;
+    font-size: medium;
+    font-weight: bold;
   }
 
   .contact-description {
-    margin: 0 0 1.5rem 0;
     line-height: 1.6;
-    color: #d0d0d0;
-    max-width: 500px;
+    color: var(--font-color-body);
   }
 
   .contact-links {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 1.5rem;
     content: icon;
     margin-top: 0.5rem;
   }
 
-  .contact-links > a {
+  .contact-links a {
     color: var(--color-primary);
-    font-size: 5rem;
+    font-size: medium;
     transition: transform 0.2s ease;
   }
 
-  .contact-links > a:hover {
-    transform: scale(1.15);
+  .contact-links a:hover {
+    color: var(--color-secondary);
+    transform: scale(1.2);
   }
 
 
-.skills-badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
+  /* Skills Section */
+  .skills-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
 
-.skill-badge {
-  background-color: var(--color-background-lighter);
-  color: var(--color-secondary);
-  padding: 0.4rem 0.8rem;
-  border-radius: 0.5rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-  border: 1px solid var(--color-secondary);
-  transition: all 0.3s ease;
-}
+  .skill-badge {
+    background-color: var(--color-background-lighter);
+    color: var(--color-secondary);
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: medium;
+    font-weight: bold;
+    border: 1px solid var(--color-secondary);
+    transition: all 0.3s ease;
+  }
 
-.skill-badge:hover {
-  background-color: var(--color-secondary);
-  color: var(--color-background);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(51, 153, 255, 0.3);
-}
+  .skill-badge:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-background-lighter);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 255, 53, 0.3);
+  }
 
-  /* Mobile responsive styles */
-  @media (max-width: 768px) {
+
+  /* Mobile Adaptations */
+  @media  (max-width: 750px) {
     .contact-card {
-        margin-top: 6rem;
-        margin-bottom: 1rem;
-        width: var(--card-width-m);
-        flex-direction: column;
-        text-align: center;
+      flex-direction: column;
+
     }
 
-    .skills-badges {
-        padding-inline: 10px;
-    }
-    
-    .contact-description {
-        text-align: start;
-        padding-inline: 1rem;
-    }
-
-    .contact-info-img img {
-        max-width: min-content;
-        align-self: center;
+    .contact-image {
+      object-fit: cover;
+      border-radius: 1rem;
+      width: 30%;
+      justify-self: center;
+      align-self: center
     }
   }

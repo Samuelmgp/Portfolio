@@ -8,7 +8,7 @@ button {
 
 @media screen {
     .navbar {
-        position: fixed;
+        position: relative;
         display: flex;
         flex-direction: row;
         background-color: #232323;
@@ -55,7 +55,7 @@ button {
 /** Mobile nav hamburger menu styles */
 @media (max-width: 768px) {
     .navbar {
-        position: fixed;
+        position: relative;
         top: 0;
         z-index: 10;
         display: inline-flex;
