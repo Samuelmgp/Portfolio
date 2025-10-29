@@ -7,7 +7,7 @@ import ContactCard from "../components/ContactCard";
 function Home () {
 
         return (
-            <div className="container">
+            <div className="App-header">
                 <ContactCard />
             </div>
         )

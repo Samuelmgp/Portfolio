@@ -30,7 +30,7 @@ function ContactCard () {
                         <p className="contact-description">
                             I am a recent Computer Science graduate from Dalhousie University.<br /> 
                             I am passionate about cyber secruity, coding, and new technologies. I am currently working
-                            on enhancing understanding AI, and refining understanding of cyber security and networks.
+                            on enhancing my understanding of AI, and learning more about cyber security and networks.
                             I would enjoy a challenging yet rewarding position, where I can continue to learn and
                             gain valuable experience.
                         </p>

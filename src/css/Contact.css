@@ -16,8 +16,7 @@
   }
 
   .contact-image {
-    width: 20%;
-    height: 40%;
+    width: 30%;
     border-radius: 1rem;
   }
 
@@ -95,13 +94,30 @@
   @media  (max-width: 750px) {
     .contact-card {
       flex-direction: column;
+      width: var(--card-width-m);
+    }
 
+    .contact-info {
+      align-items: center;
+    }
+
+    .contact-tagline {
+      text-align: center;
+    }
+
+    .skills-badges {
+      justify-content: center;
+    }
+
+    .contact-links {
+      justify-content: space-around;
     }
 
     .contact-image {
       object-fit: cover;
-      border-radius: 1rem;
-      width: 30%;
+      border-radius: 10rem;
+      width: 10rem;
+      height: 10rem;
       justify-self: center;
       align-self: center
     }

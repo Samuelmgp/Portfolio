@@ -8,10 +8,10 @@ button {
 
 @media screen {
     .navbar {
-        position: relative;
+        position: sticky;
         display: flex;
         flex-direction: row;
-        background-color: #232323;
+        background-color: var(--color-nav-background);
         width: 100%;
     }
     
@@ -55,9 +55,9 @@ button {
 /** Mobile nav hamburger menu styles */
 @media (max-width: 768px) {
     .navbar {
-        position: relative;
+        position: sticky;
         top: 0;
-        z-index: 10;
+        z-index: 2;
         display: inline-flex;
         justify-content: space-between;
         justify-items: center;
@@ -95,12 +95,12 @@ button {
     }
 
     .navbar-hamburger:active{
-        background-color: #343434;
+        background-color: var(--color-background);
         box-shadow: none;
     }
 
     .menu {
-        color: #e0e0e0;
+        color: white;
         height: 100%;
         width: 100%;
     }
