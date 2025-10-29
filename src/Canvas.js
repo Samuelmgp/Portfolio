@@ -15,9 +15,8 @@ var canvas = document.querySelector('canvas');
 
 // Use CSS dimensions instead of window dimensions for better mobile Safari support
 function setCanvasSize() {
-    const rect = canvas.getBoundingClientRect();
-    canvas.width = rect.width;
-    canvas.height = rect.height;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 }
 
 setCanvasSize();
