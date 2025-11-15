@@ -1,6 +1,7 @@
 /* Large Size devices (Computers) */
 @media screen {
   :root {
+    --font-color-body: #d0d0d0; 
     --font-size-base: 16px;
     --spacing: 1rem;
     --padding: 1rem;
@@ -10,6 +11,7 @@
     --card-width-l: 75%;
     --color-primary: #3399ff;
     --color-secondary: #eeff33;
+    --color-nav-background: #232323;
     --color-background: #131313;
     --color-background-lighter: #333333;
     --color-background-translucent: rgba(19,19,19,0.85);
@@ -44,42 +46,24 @@
   }
 }
 
-.App-header {
-  background-color: transparent;
-  min-height: 100vh;
-  min-height: 100dvh; /* Dynamic viewport height for mobile Safari */
-  min-width: 100vw;
+#root {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 1rem;
+  height: 100dvh;
+  width: 100dvw;
+}
+
+.App-header {
+  background-color: transparent;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-content: center;
   justify-content: center;
   font-size: var(--font-size-base);
   color: white;
-}
-
-.container {
-  width: var(--container-width);
-  height: min-content;
-  background-color: var(--color-background);
-  padding: 1.2rem;
-  border-radius: 1rem;
-  box-shadow: 2px 0 10px 0 var(--color-primary);
-}
-
-.body {
-  padding-inline: 1rem;
-}
-
-.about-me-section {
-   display: flex;
-   align-items: center;
-   justify-items: center;
-}
-
-.my-photo {
-  width: 200px;
-  border-radius: 1rem;
-  border: var(--color-secondary);
 }
 
 canvas {
@@ -91,15 +75,5 @@ canvas {
   height: 100vh;
   height: 100dvh; /* Dynamic viewport height for mobile Safari */
   z-index: 0;
-  pointer-events: auto;
-}
-
-.container {
-  position: relative;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.container * {
   pointer-events: auto;
 }
