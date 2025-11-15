@@ -11,8 +11,20 @@ function ContactCard () {
 
     return (
         <div className="contact-card">
-
-            <img className="contact-image" src={myPhoto} alt="Me" />
+            <div className="contact-card-header">
+                <img className="contact-image" src={myPhoto} alt="Me" />
+                <div className='contact-links'>
+                            <a href="mailto:samuelmgp@icloud.com">
+                                <MdOutlineAlternateEmail size={48} />
+                            </a>
+                            <a href="https://www.linkedin.com/in/samuel-garcia-65589923b/">
+                                <IoLogoLinkedin size={48} />
+                            </a>
+                            <a href="https://github.com/Samuelmgp">
+                                <IoLogoGithub size={48} />
+                            </a>
+                        </div>
+            </div>
 
 
             <div className="contact-info">
@@ -28,25 +40,15 @@ function ContactCard () {
 
                 <div className="contact-info-body">
                         <p className="contact-description">
-                            I am a recent Computer Science graduate from Dalhousie University.<br /> 
+                            I am a recent Computer Science graduate from Dalhousie University.
                             I am passionate about cyber secruity, coding, and new technologies. I am currently working
-                            on enhancing my understanding of AI, and learning more about cyber security and networks.
+                            on enhancing my understanding of AI development, and I'm continuing to 
+                            learn more about cyber security and networks. 
                             I would enjoy a challenging yet rewarding position, where I can continue to learn and
-                            gain valuable experience.
+                            gain valuable experience. <br /> <br />
+                            I am looking forward to hearing from you! <br />
+                            You can find some of my links below my picture.
                         </p>
-
-                        <div className='contact-links'>
-                            <a href="mailto:samuelmgp@icloud.com">
-                                <MdOutlineAlternateEmail size={48} />
-                            </a>
-                            <a href="https://www.linkedin.com/in/samuel-garcia-65589923b/">
-                                <IoLogoLinkedin size={48} />
-                            </a>
-                            <a href="https://github.com/Samuelmgp">
-                                <IoLogoGithub size={48} />
-                            </a>
-                        </div>
-
                 </div>
             </div>
         </div>
