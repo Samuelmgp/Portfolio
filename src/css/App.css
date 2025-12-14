@@ -77,3 +77,13 @@ canvas {
   z-index: 0;
   pointer-events: auto;
 }
+
+.invisible {
+  display: none;
+  visibility: hidden;
+}
+
+.visible {
+  display: inline;
+  visibility: visible;
+}

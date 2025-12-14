@@ -3,6 +3,7 @@ import { IoLogoLinkedin, IoLogoGithub } from "react-icons/io";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 
 import "../css/Contact.css"
+import Expand from "./Expand";
 
 function ContactCard () {
     const skills = [
@@ -45,9 +46,13 @@ function ContactCard () {
                             on enhancing my understanding of AI development, and I'm continuing to 
                             learn more about cyber security and networks. 
                             I would enjoy a challenging yet rewarding position, where I can continue to learn and
-                            gain valuable experience. <br /> <br />
-                            I am looking forward to hearing from you! <br />
-                            You can find some of my links below my picture.
+                            gain valuable experience.
+                            <span id="description-extra" className="invisible">
+                                <br /> <br />
+                                I am looking forward to hearing from you! 
+                                You can find some of my links below my picture.
+                            </span>
+                             <Expand id="description-extra"/>
                         </p>
                 </div>
             </div>
