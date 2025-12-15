@@ -1,5 +1,3 @@
-import ContactCard from '../components/ContactCard';
-
 function Resume () {
     return (
         <div className="App-header">
