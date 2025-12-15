@@ -11,6 +11,7 @@
     --card-width-m: 50%;
     --card-width-l: 75%;
     --color-primary: #3399ff;
+    --color-primary-deep: #007fff;
     --color-secondary: #eeff33;
     --color-nav-background: #232323;
     --color-background: #131313;
@@ -29,7 +30,6 @@
     --card-width-s: 35%;
     --card-width-m: 75%;
     --card-width-l: 85%;
-    --my-color-theme: #3399ff;
     --img-width: 100%;
     --img-height: 100%;
   }
@@ -44,7 +44,6 @@
     --card-width-s: 65%;
     --card-width-m: 75%;
     --card-width-l: 85%;
-    --my-color-theme: #3399ff;
   }
 }
 

@@ -9,15 +9,13 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 function Experience() {
-    const { position, company, duration, description } = workExperience[0];
-  
     return (
         <Timeline id="timeline" position="alternate-reverse">
         {workExperience.map((job, index) => (
             <TimelineItem key={index}>
                 <TimelineSeparator>
-                    <TimelineDot color={index % 2 == 0 ? "primary" : "secondary"} />
-                    {index < workExperience.length - 1 && <TimelineConnector />}
+                    <TimelineDot sx={{background: 'var(--color-primary)', boxShadow: '0 0 10px 0 var(--color-secondary)'}} />
+                    {index < workExperience.length - 1 && <TimelineConnector sx={{background: 'var(--color-primary-deep)'}}/>}
                 </TimelineSeparator>
                 <TimelineContent>
                     <EmploymentCard 

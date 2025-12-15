@@ -11,9 +11,7 @@ const EmploymentCard = ({position, company, duration, description}) => {
                     <h2>{duration}</h2>
                 </div>
             </div>
-            <div className="employment-card-details">
-                <p className="employment-details-description">{description}</p>
-            </div>
+            <p className="employment-card-description">{description}</p>
         </div>
     );
 }
