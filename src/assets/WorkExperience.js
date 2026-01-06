@@ -27,13 +27,13 @@ export const workExperience = [
   {
     position: "Voter Information Officer",
     company: "Elections Canada",
-    duration: "Oct 2022",
+    duration: "Sep 2021",
     description: "Assisted voters with finding their polling stations and provided information on the voting process during the federal election.",
   },
   {
     position: "Voter Information Officer",
     company: "Elections Canada",
-    duration: "Sep 2021",
+    duration: "Oct 2019",
     description: "Assisted voters with finding their polling stations and provided information on the voting process during the federal election.",
   },
 ];

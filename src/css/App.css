@@ -72,6 +72,16 @@
   color: white;
 }
 
+.resume-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  z-index: 1;
+  margin-top: -1rem;
+}
+
 canvas {
   background-color:var(--color-background);
   position: fixed;
