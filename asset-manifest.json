@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf838da7.css",
-    "main.js": "/static/js/main.e03eb002.js",
+    "main.css": "/static/css/main.ab4c2196.css",
+    "main.js": "/static/js/main.3b811881.js",
     "static/js/453.ad7768ec.chunk.js": "/static/js/453.ad7768ec.chunk.js",
     "static/media/myPhoto.jpeg": "/static/media/myPhoto.00dbca519db67be77133.jpeg",
+    "static/media/SAMUEL_GARCIA_CV_WEB_PUB.pdf": "/static/media/SAMUEL_GARCIA_CV_WEB_PUB.2516b5c82a31f54cc550.pdf",
     "index.html": "/index.html",
-    "main.bf838da7.css.map": "/static/css/main.bf838da7.css.map",
-    "main.e03eb002.js.map": "/static/js/main.e03eb002.js.map",
+    "main.ab4c2196.css.map": "/static/css/main.ab4c2196.css.map",
+    "main.3b811881.js.map": "/static/js/main.3b811881.js.map",
     "453.ad7768ec.chunk.js.map": "/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf838da7.css",
-    "static/js/main.e03eb002.js"
+    "static/css/main.ab4c2196.css",
+    "static/js/main.3b811881.js"
   ]
 }
