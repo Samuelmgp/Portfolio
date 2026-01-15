@@ -10,13 +10,13 @@ export const workExperience = [
     position: "Temp Worker",
     company: "MaxSys Staffing",
     duration: "May 2024",
-    description: "Worked with various companies preforming tasks based on their required needs. Much like the previous year.",
+    description: "Worked for various companies on a temporary basis, performing tasks such as general labour, warehouse work, construction, office/residential moving, file reorganization, and setting up business spaces.",
   },
   {
     position: "Temp Worker",
     company: "MaxSys Staffing",
     duration: "May 2023 - Sep, 2023",
-    description: "Worked for various companies on a temporary basis, performing tasks such as general labour, warehouse work, construction, office/residential moving, file reorganiation, and setting up business spaces.",
+    description: "Worked for various companies on a temporary basis, performing tasks such as general labour, warehouse work, construction, office/residential moving, file reorganization, and setting up business spaces.",
   },
   {
     position: "Garden Centre Employee",
