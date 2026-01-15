@@ -1,0 +1,21 @@
+.under-dev {
+    z-index: 1;
+    background-color: var(--color-background-translucent);
+    box-shadow: 0 0 10px 0 var(--color-secondary);
+    width: var(--card-width-m);
+    border-radius: 1rem;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.under-dev h1 {
+    color: var(--font-color-heading);
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.under-dev p {
+    color: var(--font-color-body);
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    line-height: 1.5;
+}
