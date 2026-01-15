@@ -2,7 +2,7 @@ import myPhoto from "../assets/myPhoto.jpeg";
 import { IoLogoLinkedin, IoLogoGithub } from "react-icons/io";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 
-import "../css/Contact.css"
+import "../css/ContactCard.css"
 import Expand from "./Expand";
 
 function ContactCard () {

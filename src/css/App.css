@@ -1,6 +1,7 @@
 /* Large Size devices (Computers) */
 @media screen {
   :root {
+    --font-color-heading: #ffffff;
     --font-color-body: #d0d0d0; 
     --font-size-base: 16px;
     --spacing: 1rem;
@@ -10,9 +11,11 @@
     --card-width-m: 50%;
     --card-width-l: 75%;
     --color-primary: #3399ff;
+    --color-primary-deep: #007fff;
     --color-secondary: #eeff33;
     --color-nav-background: #232323;
     --color-background: #131313;
+    --color-background-dark: #1a1a1a;
     --color-background-lighter: #333333;
     --color-background-translucent: rgba(19,19,19,0.85);
   }
@@ -27,7 +30,6 @@
     --card-width-s: 35%;
     --card-width-m: 75%;
     --card-width-l: 85%;
-    --my-color-theme: #3399ff;
     --img-width: 100%;
     --img-height: 100%;
   }
@@ -42,7 +44,6 @@
     --card-width-s: 65%;
     --card-width-m: 75%;
     --card-width-l: 85%;
-    --my-color-theme: #3399ff;
   }
 }
 
@@ -52,6 +53,10 @@
   gap: 1rem;
   height: 100dvh;
   width: 100dvw;
+}
+
+#timeline {
+  z-index: 1;
 }
 
 .App-header {
@@ -64,6 +69,16 @@
   justify-content: center;
   font-size: var(--font-size-base);
   color: white;
+}
+
+.resume-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  z-index: 1;
+  margin-top: -1rem;
 }
 
 canvas {
