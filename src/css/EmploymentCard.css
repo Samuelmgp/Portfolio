@@ -1,0 +1,50 @@
+  .employment-card {
+    color: var(--font-color-body);
+    justify-self: center;
+    display: block;
+    gap: var(--spacing);
+    width: var(--card-width-l);
+    height: min-content;
+    background-color: var(--color-background-dark);
+    border-radius: 1rem;
+    padding: var(--padding);
+    box-shadow: 0 0 5px 0 var(--color-secondary);
+  }
+
+.employment-card-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+
+  .employment-header-subheader {
+    display: flex;
+    gap: 0.25rem;
+    flex-direction: row;
+    justify-self: start;
+    align-items: start;
+  }
+
+.employment-card-header > h1 {
+    color: var(--font-color-heading);
+    align-self: flex-start;
+    font-size: x-large;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .employment-header-subheader > h2 {
+    text-align: start;
+    text-wrap: wrap;
+    text-overflow: ellipsis;
+    font-size: large;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .employment-card-description {
+    font-size: medium;
+    line-height: 1.5em;
+    text-align: start;
+  }

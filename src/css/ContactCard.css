@@ -1,0 +1,137 @@
+.contact-card {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-self: center;
+    justify-content: space-around;
+    align-content: space-around;
+    gap: var(--spacing);
+    width: var(--card-width-l);
+    height: min-content;
+    background-color: var(--color-background-translucent);
+    border-radius: 1rem;
+    padding: var(--padding);
+    box-shadow: 0 0 10px 0 var(--color-primary);
+  }
+
+  .contact-card-header {
+    display: flex;
+    width: min-content;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--spacing);
+  }
+
+  .contact-image {
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+  .contact-info {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contact-info h1 {
+    color: var(--font-color-body);
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-tagline {
+    margin-top: 0.5rem;
+    color: var(--color-primary);
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  .contact-description {
+    line-height: 1.5;
+    color: var(--font-color-body);
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    content: icon;
+    margin-top: 0.5rem;
+  }
+
+  .contact-links a {
+    color: var(--color-primary);
+    font-size: medium;
+    transition: transform 0.2s ease;
+  }
+
+  .contact-links a:hover {
+    color: var(--color-secondary);
+    transform: scale(1.2);
+  }
+
+
+  /* Skills Section */
+  .skills-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .skill-badge {
+    background-color: var(--color-background-lighter);
+    color: var(--color-secondary);
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: medium;
+    font-weight: bold;
+    border: 1px solid var(--color-secondary);
+    transition: all 0.3s ease;
+  }
+
+  .skill-badge:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-background-lighter);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 255, 53, 0.3);
+  }
+
+
+  /* Mobile Adaptations */
+  @media  (max-width: 750px) {
+    .contact-card {
+      flex-direction: column;
+      width: var(--card-width-m);
+    }
+
+    .contact-info {
+      align-items: center;
+    }
+    .contact-card-header {
+      margin-top: 1rem;
+      align-self: center;
+    }
+
+    .contact-tagline {
+      text-align: center;
+    }
+
+    .skills-badges {
+      justify-content: center;
+    }
+
+    .contact-links {
+      justify-content: space-around;
+    }
+
+    .contact-image {
+      object-fit: cover;
+      border-radius: 10rem;
+      width: 10rem;
+      height: 10rem;
+      justify-self: center;
+      align-self: center
+    }
+  }
