@@ -1,5 +1,14 @@
 export const projects = [
     {
+    name: "Nurdle",
+    year: "2026 In Progress",
+    description: "This is a mini-game where players are given numbers to guess, buttons provide colour feedback; green for a hit and red for a miss. This is a work in-progress and may have different features upon completion.",
+    technologies: ["React", "TypeScript", "HTML", "CSS", "Firebase"],
+    categories: ["Web", "Personal", "Game"],
+    git: "https://github.com/Samuelmgp/Number-Guess",
+    link: "https://number-guess-xi.vercel.app"
+    },
+    {
     name: "SCFriends",
     year: "2025/2026",
     description: "I created a small webpage to easily view and search through Snapchats friends JSON export.",

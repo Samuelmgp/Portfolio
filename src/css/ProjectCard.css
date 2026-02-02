@@ -32,3 +32,9 @@
     text-decoration: none;
     font-weight: bold;
 }
+
+.project-link > a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
+}

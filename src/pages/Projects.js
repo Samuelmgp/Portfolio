@@ -29,6 +29,7 @@ function Projects() {
                             technologies={project.technologies}
                             categories={project.categories}
                             git={project.git}
+                            link={project.link}
                         />
                     </TimelineContent>
                 </TimelineItem>
