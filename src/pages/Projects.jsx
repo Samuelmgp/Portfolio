@@ -9,7 +9,7 @@ export default function Projects() {
     <PageWrapper>
       <SectionHeading
         title="Projects"
-        subtitle="Things I've built and worked on"
+        subtitle="Showcasing some of my recent projects and University work"
       />
       <Timeline
         items={projects}
