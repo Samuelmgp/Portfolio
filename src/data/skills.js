@@ -1,0 +1,16 @@
+export const skills = [
+  { name: "C", category: "language" },
+  { name: "Java", category: "language" },
+  { name: "Python", category: "language" },
+  { name: "JavaScript", category: "language" },
+  { name: "TypeScript", category: "language" },
+  { name: "Lua", category: "language" },
+  { name: "HTML5", category: "language" },
+  { name: "CSS", category: "language" },
+  { name: "React", category: "framework" },
+  { name: "TailwindCSS", category: "framework" },
+  { name: "Docker", category: "tool" },
+  { name: "AWS", category: "tool" },
+  { name: "Firebase", category: "tool" },
+  { name: "Git", category: "tool" },
+];

@@ -4,48 +4,56 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Commands
 
-- `npm start` — dev server on localhost:3000
-- `npm run build` — production build to /build
-- `npm test` — run tests in watch mode (react-scripts/Jest)
+- `npm run dev` — dev server on localhost:3000
+- `npm run build` — production build to /dist
+- `npm run preview` — preview production build locally
 - `npm run deploy` — build and deploy to GitHub Pages via gh-pages
 
 ## Architecture
 
-React 19 portfolio site bootstrapped with Create React App. Pure JavaScript (no TypeScript).
+React 19 portfolio site built with **Vite** and **Tailwind CSS v4**. Pure JavaScript (no TypeScript).
 
 ### Routing
 
-React Router v7 with flat top-level routes defined in `src/App.js`:
-- `/` → Home (ContactCard hero)
-- `/experience` → Experience (MUI Timeline of jobs)
-- `/projects` → Projects (MUI Timeline of project cards)
+React Router v7 with flat top-level routes defined in `src/App.jsx`:
+- `/` → Home (hero + about + skills)
+- `/experience` → Experience (custom timeline)
+- `/projects` → Projects (custom timeline)
 - `/resume` → Resume (embedded PDF viewer)
 
 ### Key Directories
 
-- `src/pages/` — Route page components (`.js` extension)
-- `src/components/` — Reusable UI components (`.jsx` extension)
-- `src/assets/` — Static data files and media (profile photo, resume PDF)
-- `src/css/` — Component-scoped CSS files
+- `src/pages/` — Route page components (`.jsx`)
+- `src/components/` — Organized by feature:
+  - `ui/` — Card, Badge, SocialIcon, SectionHeading, ExternalLink
+  - `layout/` — Layout, Footer, PageWrapper
+  - `navigation/` — Navigation, ThemeToggle
+  - `background/` — AnimatedBackground (canvas)
+  - `timeline/` — Timeline, TimelineItem
+  - `home/` — HeroSection, AboutSection, SkillsSection
+  - `experience/` — ExperienceCard
+  - `projects/` — ProjectCard
+- `src/data/` — Static data (profile, social, skills, projects, experience)
+- `src/context/` — ThemeContext, BackgroundContext
+- `src/hooks/` — useTheme, useBackground
+- `src/assets/` — Media files (photo, resume PDF)
 
 ### Data Layer
 
-All data is static — no API calls or database. Project and experience data live in:
-- `src/assets/Projects.js` — array of project objects
-- `src/assets/WorkExperience.js` — array of employment objects
-
-These are imported directly by their respective page components and rendered via `ProjectCard.jsx` and `EmploymentCard.jsx`.
+All data is static — no API calls or database. Data lives in `src/data/`:
+- `projects.js`, `experience.js`, `skills.js`, `social.js`, `profile.js`
 
 ### Styling
 
-- CSS custom properties for theming defined in `src/css/App.css` `:root` (primary: `#3399ff`, secondary: `#eeff33`, background: `#131313`)
-- Plain CSS files per component — no Tailwind, no CSS-in-JS (Emotion is only used by MUI internally)
-- MUI `sx` prop used for Timeline component styling
-- Responsive breakpoints: mobile (<768px), tablet (769-1024px), desktop (default)
+- **Tailwind CSS v4** with `@theme` design tokens in `src/index.css`
+- Color palette: primary `#3399ff`, secondary `#eeff33`, background `#131313`
+- Dark/light mode via class strategy on `<html>` (ThemeContext)
+- Glass morphism utility: `glass` class
+- No MUI, no CSS-in-JS, no component-scoped CSS files
 
-### Canvas Background
+### Animated Background
 
-`src/Canvas.js` renders an interactive 2D canvas with animated geometric shapes behind all pages. It reads theme colors from CSS custom properties and responds to mouse hover. The canvas element lives in `public/index.html`.
+`AnimatedBackground.jsx` renders a React-managed canvas with drifting wireframe shapes. Toggleable via BackgroundContext, persisted to localStorage.
 
 ## Git Workflow
 
