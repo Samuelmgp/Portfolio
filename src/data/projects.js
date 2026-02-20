@@ -23,7 +23,7 @@ export const projects = [
     technologies: ["React", "TypeScript", "HTML", "TailwindCSS"],
     categories: ["Web", "Personal"],
     git: "https://github.com/Samuelmgp/SCFriends",
-    link: null,
+    link: "https://sc-friends.vercel.app/",
   },
   {
     id: "portfolio",
