@@ -3,7 +3,7 @@ import Card from "../ui/Card";
 import Badge from "../ui/Badge";
 
 export default function ProjectCard({ project }) {
-  const { name, year, status, featured, description, technologies, git, link } =
+  const { name, year, status, featured, description, technologies, categories, git, link } =
     project;
 
   return (
@@ -43,21 +43,33 @@ export default function ProjectCard({ project }) {
             )}
           </div>
         </div>
-
-        {status === "in-progress" && (
-          <Badge variant="inprogress" className="mt-2">In Progress</Badge>
-        )}
-
-        {status === "completed" && (
-          <Badge variant="completed" className="mt-2">Completed</Badge>
-        )}
-        {status === "school" && (
-          <Badge variant="school" className="mt-2">University Project</Badge>
-        )}
+            
+        {((status) => {
+          switch (status) {
+            case "school": 
+              return (<Badge variant="school" className="mt-3">University Project</Badge>);
+            case "completed":
+              return (<Badge variant="completed" className="mt-3">Completed</Badge>);
+            case "in-progress" :
+              return (<Badge variant="inprogress" className="mt-3">In Progress</Badge>);
+            case "occassional":
+              return (<Badge variant="default" className="mt-3">Occassionally Updated</Badge>);
+            default :
+              return null;
+          }
+        })(status)}
 
         <p className="text-text-body text-sm leading-relaxed mt-3">
           {description}
         </p>
+        
+        <div className="flex flex-wrap gap-1.5 mt-4">
+          {categories.map((cat) => (
+            <Badge key={cat}>
+              {cat}
+            </Badge>
+          ))}
+        </div>
 
         <div className="flex flex-wrap gap-1.5 mt-4">
           {technologies.map((tech) => (

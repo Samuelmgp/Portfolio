@@ -1,5 +1,20 @@
 export const projects = [
   {
+    id: "sgfitness",
+    name: "Steady Grind Fitness",
+    year: "2026",
+    status: "in-progress",
+    featured: false,
+    description:
+    `A fitness tracking application created with the assistance of claude.
+    Originally with the idea as a fitness scheduling application. Transition slowly
+    into an application for logging workouts & exercises.`,
+    technologies: ["Claude", "SwiftUI", "Swift"],
+    categories: ["iOS", "Personal", "Health"],
+    git: "https://github.com/Samuelmgp/SGFitness",
+    link: null
+  },
+  {
     id: "nurdle",
     name: "Nurdle",
     year: "2026",
@@ -29,20 +44,20 @@ export const projects = [
     id: "portfolio",
     name: "Portfolio Website",
     year: "2025/2026",
-    status: "in-progress",
+    status: "occassional",
     featured: true,
     description:
       "My personal portfolio website to showcase my projects and skills.",
-    technologies: ["React", "JavaScript", "TailwindCSS", "Vite"],
+    technologies: ["React", "JavaScript", "TailwindCSS", "Vite", "Claude"],
     categories: ["Web", "Personal"],
     git: "https://github.com/Samuelmgp/Portfolio",
-    link: null,
+    link: "https://samuelmgp.me",
   },
   {
     id: "botanica",
     name: "Botanica",
     year: "2025",
-    status: "incomplete",
+    status: "updates",
     featured: false,
     description:
       "A plant care web app that helps users track watering schedules, provides care tips, and optimizes plant care through plant identification.",
@@ -59,8 +74,8 @@ export const projects = [
     featured: false,
     description:
       "A group project creating a news website for Dalhousie University students, featuring articles, event listings, and campus resources.",
-    technologies: ["React", "JavaScript", "HTML", "CSS", "Python", "AI"],
-    categories: ["Web", "School", "News", "Microservices"],
+    technologies: ["React", "JavaScript", "HTML", "CSS", "Python", "Docker"],
+    categories: ["Web", "News", "Microservices"],
     git: null,
     link: null,
   },
@@ -83,7 +98,6 @@ export const projects = [
     ],
     categories: [
       "Web",
-      "School",
       "Microservices",
       "Cloud Computing",
       "Serverless",
@@ -98,9 +112,9 @@ export const projects = [
     status: "school",
     featured: false,
     description:
-      "Worked with a team as a junior developer on a brown-field project furthering progress based on requirements established by the client.",
+      "Worked with a team of peers as a junior developer on a brown-field project furthering progress based on requirements established by the client.",
     technologies: ["Pygames", "Python"],
-    categories: ["Game", "School", "Research"],
+    categories: ["Game", "Research", "Brain-Computer Interface"],
     git: null,
     link: null,
   },
