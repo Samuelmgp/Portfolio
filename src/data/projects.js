@@ -29,7 +29,7 @@ export const projects = [
     id: "portfolio",
     name: "Portfolio Website",
     year: "2025/2026",
-    status: "completed",
+    status: "in-progress",
     featured: true,
     description:
       "My personal portfolio website to showcase my projects and skills.",
@@ -42,7 +42,7 @@ export const projects = [
     id: "botanica",
     name: "Botanica",
     year: "2025",
-    status: "completed",
+    status: "incomplete",
     featured: false,
     description:
       "A plant care web app that helps users track watering schedules, provides care tips, and optimizes plant care through plant identification.",
@@ -55,7 +55,7 @@ export const projects = [
     id: "dal-daily",
     name: "Dal Daily",
     year: "2025",
-    status: "completed",
+    status: "school",
     featured: false,
     description:
       "A group project creating a news website for Dalhousie University students, featuring articles, event listings, and campus resources.",
@@ -68,7 +68,7 @@ export const projects = [
     id: "grade-assist",
     name: "Grade Assist",
     year: "2025",
-    status: "completed",
+    status: "school",
     featured: false,
     description:
       "A web application to help students track academic performance in each course, using color-coding to indicate progress.",
@@ -95,7 +95,7 @@ export const projects = [
     id: "pirate-pci",
     name: "Pirate PCI",
     year: "2024",
-    status: "completed",
+    status: "school",
     featured: false,
     description:
       "Worked with a team as a junior developer on a brown-field project furthering progress based on requirements established by the client.",

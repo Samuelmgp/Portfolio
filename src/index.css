@@ -9,6 +9,11 @@
   --color-secondary: #eeff33;
   --color-accent: #6366f1;
 
+  /* Badge Specific Colors */
+  --color-completed-bg: #66e16a;
+  --color-completed-text: #06bc00;
+  --color-completed-border: #4aff56;
+
   /* Dark mode (default) */
   --color-bg: #131313;
   --color-bg-dark: #0d0d0d;
@@ -33,9 +38,10 @@
 
 /* ── Light mode overrides ──────────────────────────────── */
 .light {
+  --color-school-bg: #f7f3a9;
   --color-primary: #0066cc;
   --color-primary-deep: #004c99;
-  --color-secondary: #b8a800;
+  --color-secondary: hsl(55, 100%, 36%);
   --color-bg: #f0f4f8;
   --color-bg-dark: #e8edf2;
   --color-bg-card: #ffffff;

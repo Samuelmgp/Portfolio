@@ -10,7 +10,7 @@ export default function Footer() {
         ))}
       </div>
       <p className="text-text-muted text-sm">
-        &copy; {new Date().getFullYear()} Samuel Garcia
+        &copy; {new Date().getFullYear()} Samuel Garcia. All rights reserved.
       </p>
     </footer>
   );

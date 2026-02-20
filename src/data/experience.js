@@ -6,7 +6,7 @@ export const experience = [
     duration: "Jun 2024 — Nov 2025",
     description:
       "Collected donations from donation bin sites along with residential and special pick-ups. Ensured safety and efficiency with handling and transportation, along with cleaning messy sites. Also assisted with some events outside of driving duties.",
-    skills: ["Logistics", "Safety", "Time Management"],
+    skills: ["Logistics", "Safety", "Time Management", "Driving"],
   },
   {
     id: "maxsys-2024",

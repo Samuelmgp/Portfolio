@@ -3,20 +3,26 @@ import { useBackground } from "../../hooks/useBackground";
 import { useTheme } from "../../hooks/useTheme";
 
 const SHAPE_COUNT = 18;
+const BLUE_DARK = "#3399ff";
+const BLUE_LIGHT = "#007fff";
+const YELLOW_DARK = "#fff133";
+const YELLOW_LIGHT = "#ffb700";
 
 function createShapes(width, height) {
+
   const shapes = [];
   for (let i = 0; i < SHAPE_COUNT; i++) {
     shapes.push({
+      index: i,
       x: Math.random() * width,
       y: Math.random() * height,
       size: 20 + Math.random() * 40,
       rotation: Math.random() * Math.PI * 2,
-      driftX: (Math.random() - 0.5) * 0.3,
+      driftX: (Math.random() - 0.5) * 0.5,
       driftY: (Math.random() - 0.5) * 0.3,
-      rotationSpeed: (Math.random() - 0.5) * 0.005,
+      rotationSpeed: (Math.random() - 0.5) * 0.02,
       type: ["square", "triangle", "circle"][Math.floor(Math.random() * 3)],
-      opacity: 0.08 + Math.random() * 0.12,
+      opacity: 0.4 + Math.random() * 0.12,
     });
   }
   return shapes;
@@ -67,19 +73,18 @@ export default function AnimatedBackground() {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
       if (!shapesRef.current) {
-        shapesRef.current = createShapes(canvas.width, canvas.height);
+        shapesRef.current = createShapes(canvas.width, canvas.height, theme);
       }
     };
 
     resize();
     window.addEventListener("resize", resize);
 
-    const color = theme === "dark" ? "#3399ff" : "#007fff";
-
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       for (const shape of shapesRef.current) {
+        const color = theme === "light" ? (shape.index % 2 === 0 ? BLUE_LIGHT : YELLOW_LIGHT) : (shape.index % 2 === 0 ? BLUE_DARK : YELLOW_DARK);
         shape.x += shape.driftX;
         shape.y += shape.driftY;
         shape.rotation += shape.rotationSpeed;

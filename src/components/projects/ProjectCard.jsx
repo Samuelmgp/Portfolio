@@ -45,7 +45,14 @@ export default function ProjectCard({ project }) {
         </div>
 
         {status === "in-progress" && (
-          <Badge variant="status" className="mt-2">In Progress</Badge>
+          <Badge variant="inprogress" className="mt-2">In Progress</Badge>
+        )}
+
+        {status === "completed" && (
+          <Badge variant="completed" className="mt-2">Completed</Badge>
+        )}
+        {status === "school" && (
+          <Badge variant="school" className="mt-2">University Project</Badge>
         )}
 
         <p className="text-text-body text-sm leading-relaxed mt-3">
