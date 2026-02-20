@@ -118,4 +118,21 @@ export const projects = [
     git: null,
     link: null,
   },
+  {
+    id: "renote",
+    name: "ReNote",
+    year: "2024",
+    status: "completed",
+    featured: false,
+    description:
+    `
+    I developed this application for the purposes of completing and receiving the 
+    React Native Certificate from ShiftKey Labs. This was a simple notes application.
+    It utilized a pre-made Redux foundation for storage and React Components for UI.
+    `,
+    technologies: ["React Native", "Tailwind", "Redux", "EvilIcons"],
+    categories: ["Notes", "Certificate"],
+    git: "https://github.com/Samuelmgp/ReNote",
+    link: null,
+  },
 ];

@@ -3,8 +3,11 @@ import Card from "../ui/Card";
 import Badge from "../ui/Badge";
 
 export default function ProjectCard({ project }) {
-  const { name, year, status, featured, description, technologies, categories, git, link } =
-    project;
+  const { name, 
+        year,
+        status, 
+        featured, description, technologies, 
+        categories, git, link } = project;
 
   return (
     <Card

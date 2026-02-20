@@ -21,7 +21,7 @@ export default function Resume() {
       </div>
 
       <Card hover={false} className="overflow-hidden">
-        <div className="aspect-[8.5/11] w-full">
+        <div className="aspect-8.5/11 w-full">
           <object
             data={resumePdf}
             type="application/pdf"

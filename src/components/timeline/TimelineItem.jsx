@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 
-export default function TimelineItem({ children, index }) {
+export default function TimelineItem({ children, index, last }) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
@@ -43,9 +43,11 @@ export default function TimelineItem({ children, index }) {
       </div>
 
       {/* Center line + dot */}
-      <div className="absolute left-3 md:left-1/2 md:-translate-x-1/2 flex flex-col items-center">
-        <div className="h-3 w-3 rounded-full bg-primary shadow-[0_0_8px_var(--color-primary)] z-10" />
-        <div className="w-px flex-1 bg-gradient-to-b from-primary/60 to-primary/10" />
+      <div className="absolute left-3 md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 flex flex-col items-center">
+        <div className="h-3 w-3 shrink-0 rounded-full bg-primary shadow-[0_0_8px_var(--color-primary)] z-10" />
+        {!last &&
+        <div className="w-px flex-1 rounded-full bg-linear-to-b from-primary/60 to-primary/10" /> 
+        }
       </div>
 
       {/* Desktop: spacer for opposite side */}
