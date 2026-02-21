@@ -9,7 +9,7 @@ export default function Experience() {
     <PageWrapper>
       <SectionHeading
         title="Experience"
-        subtitle="My professional journey thus far"
+        subtitle="My professional journey thus far."
       />
       <Timeline
         items={experience}

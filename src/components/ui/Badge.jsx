@@ -5,10 +5,18 @@ const variants = {
     "bg-primary/10 text-primary border-primary/30",
   inprogress:
     "bg-secondary/10 text-secondary border-secondary/30",
-  school:
-    "bg-secondary/20 text-secondary/80 border-secondary/50",
   completed:
-    "bg-completed-bg/10 text-completed-text border-completed-border/30",
+    "bg-completed/10 text-completed border-completed/30",
+  maintained:
+    "bg-maintained/10 text-maintained border-maintained/30",
+  occassional:
+    "bg-occassional/10 text-occassional border-occassional/30",
+  incomplete:
+    "bg-incomplete/10 text-incomplete border-incomplete/30",
+  school:
+    `text-school-text/80
+    bg-linear-to-r from-school-gold/70 to-school-black/30 via-white/30
+    border-school-text/80`,
 };
 
 export default function Badge({ children, variant = "default", className = "" }) {

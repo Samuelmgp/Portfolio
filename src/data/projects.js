@@ -44,7 +44,7 @@ export const projects = [
     id: "portfolio",
     name: "Portfolio Website",
     year: "2025/2026",
-    status: "occassional",
+    status: "maintained",
     featured: true,
     description:
       "My personal portfolio website to showcase my projects and skills.",
@@ -57,7 +57,7 @@ export const projects = [
     id: "botanica",
     name: "Botanica",
     year: "2025",
-    status: "updates",
+    status: "occassional",
     featured: false,
     description:
       "A plant care web app that helps users track watering schedules, provides care tips, and optimizes plant care through plant identification.",

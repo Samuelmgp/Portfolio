@@ -55,8 +55,10 @@ export default function ProjectCard({ project }) {
               return (<Badge variant="completed" className="mt-3">Completed</Badge>);
             case "in-progress" :
               return (<Badge variant="inprogress" className="mt-3">In Progress</Badge>);
+            case "maintained":
+              return (<Badge variant="maintained" className="mt-3">Maintained</Badge>);
             case "occassional":
-              return (<Badge variant="default" className="mt-3">Occassionally Updated</Badge>);
+              return (<Badge variant="occassional" className="mt-3">Occassional Updates</Badge>);
             default :
               return null;
           }
