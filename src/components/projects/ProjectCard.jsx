@@ -60,7 +60,7 @@ export default function ProjectCard({ project }) {
             case "occassional":
               return (<Badge variant="occassional" className="mt-3">Occassional Updates</Badge>);
             default :
-              return null;
+              return (<Badge variant="incomplete" className="mt-3">Abandoned</Badge>);
           }
         })(status)}
 
