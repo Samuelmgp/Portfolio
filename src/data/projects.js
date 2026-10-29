@@ -1,5 +1,21 @@
 export const projects = [
   {
+    id: "workhours",
+    name: "WorkHours",
+    year: "2026",
+    status: "completed",
+    featured: true,
+    description:
+    `A an iOS application that allows users to track their work hours
+    for multiple employers. It organizes work hours by pay periods associated
+    with each employer, and provides a summary of total hours worked and gross 
+    earnings.`,
+    technologies: ["SwiftData", "SwiftUI", "Swift"],
+    categories: ["iOS", "Business", "Time Tracking", "Work", "Finance"],
+    git: "https://github.com/Samuelmgp/WorkHours",
+    link: null
+  },
+  {
     id: "sgfitness",
     name: "Steady Grind Fitness",
     year: "2026",
@@ -19,7 +35,7 @@ export const projects = [
     name: "Nurdle",
     year: "2026",
     status: "in-progress",
-    featured: true,
+    featured: false,
     description:
       "A mini-game where players are given numbers to guess, with colour feedback — green for a hit and red for a miss.",
     technologies: ["React", "TypeScript", "HTML", "CSS", "Firebase"],
@@ -131,7 +147,7 @@ export const projects = [
     It utilized a pre-made Redux foundation for storage and React Components for UI.
     `,
     technologies: ["React Native", "Tailwind", "Redux", "EvilIcons"],
-    categories: ["Notes", "Certificate"],
+    categories: ["Notes", "Certificate", "ShiftKey Labs"],
     git: "https://github.com/Samuelmgp/ReNote",
     link: null,
   },

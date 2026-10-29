@@ -1,5 +1,18 @@
 export const experience = [
   {
+    id: "mfm-driver",
+    position: "Driver & Warehouse Labourer",
+    company: "The Mobile Food Market",
+    duration: "April 2026 — Present",
+    description:
+      `Responsible for delivering produce to partner locations. Ensuring timely and safe
+      develivers. Also responsible for assisting with food markets. Working along side fellow 
+      team members and volunteers to ensure a smooth and efficient operations.`,
+    skills: ["Warehouse", "Safety", "Time Management", 
+             "Driving", "Teamwork", "Customer Service",
+             "Order Review"],
+  },
+  {
     id: "bbbs-driver",
     position: "Driver",
     company: "Big Brothers Big Sisters",
