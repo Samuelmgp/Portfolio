@@ -1,4 +1,5 @@
 export const skills = [
+  { name: "Swift", category: "language" },
   { name: "C", category: "language" },
   { name: "Java", category: "language" },
   { name: "Python", category: "language" },
