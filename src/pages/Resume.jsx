@@ -7,7 +7,7 @@ import resumePdf from "../assets/SAMUEL_GARCIA_CV_WEB_PUB.pdf";
 export default function Resume() {
   return (
     <PageWrapper>
-      <SectionHeading title="Resume" subtitle="Download or view below last updated: February 2026" />
+      <SectionHeading title="Resume" subtitle="Download or view below last updated: November 2026" />
 
       <div className="flex justify-center mb-6">
         <a
